@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/styles.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Kokoa Talk</title>
@@ -8,18 +9,33 @@
 <body>
     <div class="ststus-bar">
         <div class="ststus-bar__column">
-            <span>LG U+</span>
-            <i class="fa-solid fa-wifi"></i><!-- To Do: Wifi Icon-->
-        </div>
-        <div class="ststus-bar__column">
             <span>12:23</span>
+            <i class="fa-solid fa-location-arrow"></i><!-- location arrow-->
         </div>
+        <div class="ststus-bar__column"><span></span></div>
         <div class="ststus-bar__column">
-            <span>90%</span>
-            <i class="fa-solid fa-battery-full"></i>
-            <i class="fa-solid fa-bolt"></i>
+            <i class="fa-solid fa-signal"></i><!--signal-->
+            <i class="fa-solid fa-wifi"></i><!-- To Do: Wifi Icon-->
+            <i class="fa-solid fa-battery-full fa-lg"></i><!--battery icon-->
         </div>
     </div>
+    <header class="Welcome--header">
+        <h1 class="Welcome--header__title">Welcome to KakaoTalk</h1>
+        <p class="Welcome--header__text">
+            If you have Kokoa Account, log in with your email or phone number.
+        </p>
+    </header>
+
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input tyope="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+
+
     <script src="https://kit.fontawesome.com/3085910fb5.js" crossorigin="anonymous"></script>
 </body>
 </html>

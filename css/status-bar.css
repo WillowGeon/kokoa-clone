@@ -1,0 +1,20 @@
+.ststus-bar{
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+}
+.ststus-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.ststus-bar__column{
+    width:33%;
+}
+.ststus-bar__column:last-child{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.ststus-bar__column:last-child i{
+    margin-left: 5px;
+}
