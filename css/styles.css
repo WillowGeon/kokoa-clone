@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap');
 @import "reset.css";
+@import "variables.css";
 @import "status-bar.css";
 
 body{
@@ -7,7 +8,7 @@ body{
 }
 
 .Welcome--header{
-    margin:90px 0px;
+    margin:75px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -15,12 +16,47 @@ body{
     font-weight: 600;
 }
 .Welcome--header__title{
-    margin-bottom: 20px;
-    font-size: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
 
 .Welcome--header__text{
-    width: 70%;
-    opacity: 0.7;
+    width: 80%;
+    opacity: 0.5;
 
 }
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#login-form input:not([type="submit"]){
+    border: none;
+    padding: 20px 0px;
+    font-size: 18px;
+    opacity: 0.6;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    transition: border-color 0.3s ease-in-out;
+}
+#login-form input[type="submit"]{
+    cursor:pointer;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--login-gray);
+}
+#login-form :nth-child(2){
+    margin-bottom: 30px;
+}
+#login-form :nth-child(3){
+    margin-bottom: 10px;
+}
+#login-form :nth-child(4){
+    margin-bottom: 15px;
+}
+#login-form input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+#login-form input:focus{
+    border-color: var(--yellow);
+} 
